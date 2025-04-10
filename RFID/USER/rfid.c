@@ -8,12 +8,12 @@
 void PinCS_Init(void) 
 {
     GPIO_InitTypeDef gpioInit;
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
-	gpioInit.GPIO_Mode=GPIO_Mode_Out_PP;
-	gpioInit.GPIO_Speed=GPIO_Speed_50MHz;
-	gpioInit.GPIO_Pin=GPIO_Pin_12;
-	GPIO_Init(GPIOB, &gpioInit);
-    // must set the pin high
+		RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+		gpioInit.GPIO_Mode=GPIO_Mode_Out_PP;
+		gpioInit.GPIO_Speed=GPIO_Speed_50MHz;
+		gpioInit.GPIO_Pin=GPIO_Pin_12;
+		GPIO_Init(GPIOB, &gpioInit);
+			// must set the pin high
     GPIO_SetBits(GPIOB, GPIO_Pin_12);
 }
 /**

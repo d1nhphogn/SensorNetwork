@@ -18,9 +18,9 @@ void Sys_Init(void)
 
 void Sys_Run(void)
 {
-    //RFID_Debug_ReadCard();
-    //On();
-		//Delay_ms(1000);
-    //Off();
+    RFID_Debug_ReadCard();
+    On();
+		Delay_ms(1000);
+    Off();
 		Debug();
 }
